@@ -1,4 +1,5 @@
        let mix = require('laravel-mix');
+       let vue = require('./webpack.scrips.vue');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,11 @@
  |
  */
 
-mix.js(['resources/assets/js/app.js',
-    'resources/src/vue/app_root.js' ,
-    'resources/src/vue/login.js'], 'public/js')
+mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.combine(vue.getVendorCss(),  'public/css/app.css');
+
+mix.babel(vue.getVendorJs(), 'public/scripts/lib.js');
+
+mix.babel(vue.getVueJs(), 'public/scripts/main.js');

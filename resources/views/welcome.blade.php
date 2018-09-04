@@ -4,17 +4,37 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>Laravel</title>
+        <title>Log In</title>
+        <link rel="stylesheet" href="/css/app.css">
+        <style>
 
+            .el-col {
+                border-radius: 4px;
+            }
+            .bg-purple-dark {
+                background: #99a9bf;
+            }
+            .bg-purple {
+                background: #d3dce6;
+            }
+            .bg-purple-light {
+                background: #e5e9f2;
+            }
+            .grid-content {
+                border-radius: 4px;
+                min-height: 60px;
+            }
+            .row-bg {
+                padding: 10px 0;
+                background-color: #f9fafc;
+            }
+        </style>
 
     </head>
     <body>
-        <div id="app">
-            {{--<login-page></login-page>--}}
-            @{{  sampleMessage }}
-        </div>
+
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-    <script src="/js/app.js" type="application/javascript"></script>
+
+    <script src="/scripts/lib.js" ></script>
+    <script src="/scripts/main.js" ></script>
 </html>

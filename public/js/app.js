@@ -13879,9 +13879,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(12);
-__webpack_require__(43);
-__webpack_require__(44);
-module.exports = __webpack_require__(45);
+module.exports = __webpack_require__(43);
 
 
 /***/ }),
@@ -47410,43 +47408,6 @@ if (false) {
 
 /***/ }),
 /* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-
-
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-    el: "#app",
-    data: function data() {
-        return {
-            sampleMessage: 'hello world'
-        };
-    },
-    components: {}
-
-});
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-// const login_page = Vue.component('login-page',{
-//     template : `<h1> hello world </h1>`,
-//     name : 'login-page',
-//     data:
-//         function(){
-//             return{
-//                 messageSample : "hi kim",
-//             }
-//         }
-//
-// });
-
-/***/ }),
-/* 45 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
